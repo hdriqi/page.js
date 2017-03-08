@@ -215,7 +215,7 @@
     if (page.len > 0) {
       // this may need more testing to see if all browsers
       // wait for the next tick to go back in history
-      history.back();
+      history.go(-1);
       page.len--;
     } else if (path) {
       setTimeout(function() {
